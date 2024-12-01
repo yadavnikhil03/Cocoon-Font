@@ -2,6 +2,8 @@
 
 Yo! Built this quick Magisk/KernalSU module to get that sweet Cocoon font on your Android. No system mods, no hassle. Flash and enjoy! 🚀
 
+![Cocon Regular Font](https://8font.com/wp-content/uploads/2022/03/Cocon-Regular.jpg)
+
 ## How to Get Rolling 🔧
 1. Grab the zip from [releases](https://github.com/yadavnikhil03/Cocoon-Font/releases/tag/release_v1.0)
 2. Open Magiskor KernalSU and flash it
