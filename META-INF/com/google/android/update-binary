@@ -1,0 +1,54 @@
+#!/sbin/sh
+
+#################
+# Initialization
+#################
+
+umask 022
+
+# echo before loading util_functions
+ui_print() { echo "$1"; }
+
+#########################
+# Load util_functions.sh
+#########################
+
+OUTFD=$2
+ZIPFILE=$3
+
+mount /data 2>/dev/null
+
+# Check for KernelSU first
+if command -v ksu >/dev/null 2>&1; then
+    ui_print "- KernelSU installation detected"
+    MODPATH="/data/adb/modules/cacoon-font"
+    mkdir -p "$MODPATH"
+    
+    # Extract files
+    unzip -o "$ZIPFILE" -d "$MODPATH" >&2
+    
+    # Set permissions
+    chown -R 0:0 "$MODPATH"
+    chmod -R 755 "$MODPATH"
+    
+# Check for Magisk
+elif [ -f /data/adb/magisk/util_functions.sh ]; then
+    ui_print "- Magisk installation detected"
+    . /data/adb/magisk/util_functions.sh
+    [ $MAGISK_VER_CODE -lt 20400 ] && {
+        ui_print "*******************************"
+        ui_print " Please install Magisk v20.4+! "
+        ui_print "*******************************"
+        exit 1
+    }
+    
+    install_module
+else
+    ui_print "*******************************"
+    ui_print " Please install Magisk or KernelSU!"
+    ui_print "*******************************"
+    exit 1
+fi
+
+ui_print "- Module installed successfully"
+exit 0
