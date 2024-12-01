@@ -1,32 +1,28 @@
-# Cacoon Font Installer
+# Cocoon Font Installer
 
-A module that systemlessly installs the beautiful Cacoon font on your Android device.
+Yo! Built this quick Magisk/KernalSU module to get that sweet Cocoon font on your Android. No system mods, no hassle. Flash and enjoy! 🚀
 
-## Description
-This module allows you to change your system font to Cacoon font without modifying your system partition, making it safe and easily reversible.
+## How to Get Rolling 🔧
+1. Grab the zip from [releases](https://github.com/yadavnikhil03/Cocoon-Font/releases/tag/release_v1.0)
+2. Open Magiskor KernalSU and flash it
+3. Quick reboot
+4. Boom! Fresh fonts!
 
-## Features
-- Systemless installation
-- Easy to install and uninstall
-- Compatible with most Android devices
-- No system modification required
+## What's Cool About It ⚡
+- Clean systemless install (no system partition mess)
+- Runs smooth on Android 10+
+- Works with Magiskor KernalSu
 
-## Requirements
-- Magisk installed (Latest version recommended)
-- Android device
+## Something Not Right? 🤔
+- Font looking weird? Clear that cache
+- Update Magisk if things are funky
+- Got other font modules? They might be fighting
 
-## Installation
-1. Download the latest release
-2. Flash through Magisk/KSU
-3. Reboot your device
-4. Enjoy your new font!
+## Need Help? 💬
+Catch me on [GitHub](https://github.com/yadavnikhil03) if stuff breaks!
 
-## Notes
-- Make sure to create a backup before installation
-- If you encounter any issues, please report them on the support page
+## The Legal Stuff 📜
+Module's free to mess with. Font's got its own rules though.
 
-## Credits
-Created by @yadavnikhil03
-
-## License
-This module is free to use and distribute.
+---
+Cooked up with coffee by @yadavnikhil03 ☕
